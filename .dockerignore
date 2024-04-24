@@ -1,0 +1,10 @@
+emulator-data/
+.gitignore
+.github
+Makefile
+cloudbuild.yaml
+LICENSE
+README.md
+.idea
+cache/
+firbase/data/
