@@ -13,7 +13,6 @@
     },
     "auth": {
       "port": "9099"
-    },
-    "singleProjectMode": true
+    }
   }
 }
