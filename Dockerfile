@@ -1,8 +1,7 @@
 FROM node:20-alpine
-ARG FIREBASE_VERSION=13.3.0
 RUN apk --no-cache add openjdk11-jre bash curl openssl gettext nano nginx sudo && \
-    npm cache clean --force && \
-    npm i -g firebase-tools@$FIREBASE_VERSION
+    npm cache clean --force 
+RUN npm install -g firebase-tools@13.0.0
 COPY nginx.conf /etc/nginx/
 COPY serve.sh /usr/bin/
 RUN chmod +x /usr/bin/serve.sh
